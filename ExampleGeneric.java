@@ -1,5 +1,5 @@
 import java.io.*;
-import javax.servlet.*;
+import java.servlet.*;
 
 public class ExampleGeneric extends GenericServlet{
  public void service(ServletRequest req,ServletResponse res)
