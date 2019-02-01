@@ -6,7 +6,7 @@ import java.net.URLConnection;
 class URLdemo{
     public static void main(String[] args) throws Exception
     {
-        URL obj = new URL("http://localhost/dashboard/");
+        URL obj = new URL("http://jeterorr.github.com/site/");
 
         URLConnection conn = obj.openConnection();
         int l = conn.getContentLength();

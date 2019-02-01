@@ -3,12 +3,12 @@ import java.io.BufferedReader;
 import java.io.PrintStream;
 import java.net.Socket;
 
-class Client2{
+class TCPClient{
     public static void main(String[] args) throws Exception {
         Socket s = new Socket("localhost",888);
         PrintStream ps = new PrintStream(s.getOutputStream());
         BufferedReader br = new BufferedReader(new InputStreamReader(ps));
-        BufferedReader KBDATA = new BufferedReader(new InputStr  eamReader(System.in));
+        BufferedReader KBDATA = new BufferedReader(new InputStreamReader(System.in));
 
         String serverStr,kbstr;
         while (true) {
