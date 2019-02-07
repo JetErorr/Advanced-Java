@@ -6,6 +6,7 @@ public class UDPSenderThread extends Thread
 {
     int udpreceiverPort;
     InetAddress receiverIP;
+    // hfldasjjfljkdfl;ksdjfl;asjflj
     DatagramSocket mysocket;
     public UDPServerThread(DatagramSocket socket, int rport, InetAddress rIP)
     {
