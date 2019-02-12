@@ -3,8 +3,9 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.util.*;
 
-public final class jsp1_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class jsp2_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -41,22 +42,22 @@ public final class jsp1_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\n");
+      out.write("\n");
       out.write("<html>\n");
       out.write("    <body>\n");
-      out.write("        <h1>Hello World!</h1>\n");
+      out.write("        <h1>JSP 2</h1>\n");
       out.write("        ");
-out.print("JSP 1");
+
+        out.print("JSP 2");
+        
       out.write("\n");
       out.write("        ");
+out.println(request.getParameter("user"));
       out.write("\n");
-      out.write("        ");
-      if (true) {
-        _jspx_page_context.forward("jsp2.jsp" + "?" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("user", request.getCharacterEncoding())+ "=" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("uname1", request.getCharacterEncoding()));
-        return;
-      }
-      out.write("\n");
-      out.write("        ");
-      out.write("\n");
+      out.write("        <!--Today's date: ");
+      out.print( (new java.util.Date()).toLocaleString());
+      out.write("-->\n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class jsp1_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class jsp4_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -50,10 +50,7 @@ out.print("JSP 1");
       out.write("        ");
       out.write("\n");
       out.write("        ");
-      if (true) {
-        _jspx_page_context.forward("jsp2.jsp" + "?" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("user", request.getCharacterEncoding())+ "=" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("uname1", request.getCharacterEncoding()));
-        return;
-      }
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "jsp2.jsp" + "?" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("user", request.getCharacterEncoding())+ "=" + org.apache.jasper.runtime.JspRuntimeLibrary.URLEncode("uname1", request.getCharacterEncoding()), out, false);
       out.write("\n");
       out.write("        ");
       out.write("\n");
