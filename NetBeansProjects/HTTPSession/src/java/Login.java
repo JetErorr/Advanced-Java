@@ -24,7 +24,7 @@ public class Login extends HttpServlet {
                 out.print("Welcome " + uname + ", you have logged in.");
                 HttpSession ses = request.getSession();
                 ses.setAttribute("guest", uname);
-                out.print("<a href='Logout'>Logout</>");
+                out.print("<a href='Logout'>Logout</a>");
             }
             out.println("</body>");
             out.println("</html>");
