@@ -10,7 +10,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>Serv111</servlet-name>
-        <url-pattern>/valid</url-pattern>
+        <url-pattern>/validateserv</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Welcome</servlet-name>
