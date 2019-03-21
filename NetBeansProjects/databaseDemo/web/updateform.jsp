@@ -9,7 +9,7 @@
 
 %>
 <html>  
-    <head>  
+    <head>
         <title>sql:query Tag</title>  
     </head>  
     <body>
@@ -35,8 +35,6 @@
                 </form>
             </table>
 
-
-        </form>
-    </div>
-</body>  
+        </div>
+    </body>  
 </html>  

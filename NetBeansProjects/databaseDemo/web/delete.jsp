@@ -14,10 +14,6 @@
         <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"  
                            url="jdbc:mysql://localhost/databaseDemo"  
                            user="root" password=""/>  
-
-
-
-
         <sql:update dataSource="${db}" var="rs">
             DELETE FROM `store` WHERE `PID` = <%=pid%>;
         </sql:update>

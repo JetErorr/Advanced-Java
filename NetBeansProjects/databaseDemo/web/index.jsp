@@ -9,9 +9,9 @@
     </head>  
     <body>  
 
-        <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"  
-                           url="jdbc:mysql://localhost/databaseDemo"  
-                           user="root"  password=""/>  
+        <sql:setDataSource var="db" driver="com.mysql.jdbc.Driver"
+                           url="jdbc:mysql://localhost/databaseDemo"
+                           user="root"  password=""/>
 
         <sql:query dataSource="${db}" var="rs">  
             SELECT * from store;  
